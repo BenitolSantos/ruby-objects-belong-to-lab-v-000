@@ -8,8 +8,8 @@ describe "Song" do
   end
 
   it "belongs to an artist" do 
-    artist = Artist.new
-    song.artist = artist
+    artist = Artist.new #sets a new instance of Artist class
+    song.artist = artist #
     expect(song.artist).to eq(artist)
   end
 
