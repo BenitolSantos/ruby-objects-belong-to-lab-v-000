@@ -8,8 +8,8 @@ describe "Post" do
   end
 
   it "belongs to an author" do 
-    author = Author.new
-    post.author = author
+    author = Author.new #setting a new instance of Author class
+    post.author = author #setting the instance equal to the author attribute
     expect(post.author).to eq(author)
   end
 
